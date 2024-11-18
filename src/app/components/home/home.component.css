@@ -1,0 +1,154 @@
+/* Header */
+header {
+  background-color: #314563;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 0 30px;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+header ul li {
+  position: relative;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 500px;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+
+
+header ul li:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: aliceblue;
+}
+
+
+.logo {
+  width: 80px;
+  height: 80px;
+  background-image: url("./../../assets/image/logo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo:hover {
+  filter: brightness(1.2); /* Efeito de hover na logo */
+  transition: filter 0.3s;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  header ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+}
+
+
+.pgInicial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  height: 80vh;
+  color: #26374e;
+  z-index: 1;
+}
+
+.pgInicial::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/image/bgInicio.png") center/cover no-repeat;
+  opacity: 0.5; /* Ajuste a opacidade conforme necessário */
+  z-index: -1;
+}
+
+.pgInicial h1 {
+  font-size: 50px;
+  max-width: 70%;
+  padding-top: 20vh;
+}
+
+.pgInicial p {
+  font-size: 25px;
+  max-width: 70%;
+  padding-top:  2vh;
+}
+
+
+/* Ajustes adicionais para telas menores */
+@media (max-width: 768px) {
+.pgInicial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+.pgInicial h1 {
+    font-size: 10vw; /* Tamanho maior para telas pequenas */
+}
+.pgInicial p {
+    font-size: 3vw;
+    text-align: center;
+
+}
+}
+
+
+
+
+
+footer {
+
+  background-color: #314563;
+  color: aliceblue;
+  height: 100px;
+  font-weight: 500;
+  letter-spacing: 1px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
