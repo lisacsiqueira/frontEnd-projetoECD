@@ -8,8 +8,8 @@ import { PagUserComponent } from './components/pag-user/pag-user.component';
 export const routes: Routes = [
 
   {path: '', component: HomeComponent},
-  {path: 'cadastro', component: CadastroComponent},
   {path: 'login', component: LoginComponent},
+  {path: 'cadastro', component: CadastroComponent},
   {path: 'pag-oracoes', component: PagOracoesComponent},
   {path: 'pag-user', component: PagUserComponent},
   {path: '**', redirectTo: '' }
