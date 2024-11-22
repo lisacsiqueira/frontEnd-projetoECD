@@ -1,0 +1,159 @@
+header {
+  background-color: #314563;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 0 30px;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+header ul li {
+  position: relative;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 500px;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+
+
+header ul li:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: aliceblue;
+}
+
+
+.logo {
+  width: 80px;
+  height: 80px;
+  background-image: url("./../../assets/image/logo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo:hover {
+  filter: brightness(1.2); /* Efeito de hover na logo */
+  transition: filter 0.3s;
+}
+
+
+section{
+  background-color: #EAC3C5;
+  height: 100%;
+  padding: 50px;
+
+  /* max-width: 80%; */
+
+}
+
+.versiculo, .versiculoFavoritos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 200px;
+  margin-top: 100px;
+
+}
+.versiculo h2, .oracoes h2, .versiculoFavoritos h2{
+  font-size: 40px;
+
+}
+.versiculo p{
+  max-width: 400px;
+  background-color: rgba(240, 255, 255, 0.39);
+  border-radius: 20px;
+  padding: 50px 40px;
+  height: 300px;
+  text-align: center;
+}
+
+.oracoes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 200px;
+  gap: 10vh;
+}
+
+
+.enunciado{
+  max-width: 500px;
+}
+
+.enunciado p
+{
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.enunciado button, .caixa-texto button{
+  margin-right: 10px; /* Espaço entre os botões */
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #314563;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 300px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+
+}
+.enunciado button:hover {
+  background-color: #6590d1;
+}
+
+.caixa-texto textarea
+{
+  margin-top: 50px;
+  height: 350px;
+  width: 300px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  background-color: rgba(248, 248, 248, 0.801);
+
+  resize: none; /* Impede o redimensionamento */
+  font-size: 16px;
+  line-height: 1.5; /* Espaçamento entre linhas */
+  box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
+}
+
+.versiculoFavoritos p{
+  background-color: rgba(240, 248, 255, 0.808);
+  margin-top: 50px;
+  max-width: 75%;
+  padding: 20px;
+  border-radius: 10px;
+  height: 100px;
+
+
+
+}
+.versiculoFavoritos a{
+  margin-top: 30px;
+}

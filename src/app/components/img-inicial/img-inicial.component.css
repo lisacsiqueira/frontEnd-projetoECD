@@ -1,0 +1,28 @@
+.img{
+  background-image: url("../../assets/image/logo.png");
+  /* background-color: aquamarine; */
+
+  width: 350px;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  margin-left: 35px;
+
+}
+
+
+
+.imgInicial h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-size: 60px;
+  /* background-color: blueviolet; */
+  width: 400px;
+  color: #224161;
+
+}

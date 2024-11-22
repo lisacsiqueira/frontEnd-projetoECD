@@ -1,0 +1,57 @@
+.cadastro {
+  background: rgba(255, 255, 255, 0.267); /* Cor de fundo do formulário */
+  padding: 20px;
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  width: 100%; /* Largura relativa para ajuste */
+  max-width: 400px; /* Limite máximo de largura */
+  margin-left: auto; /* Empurra o formulário para a direita */
+  margin-right: 20px; /* Adiciona margem na direita */
+  margin-top: auto; /* Adiciona espaço flexível acima */
+  margin-bottom: auto; /* Adiciona espaço flexível abaixo */
+
+}
+
+
+h2 {
+  margin-bottom: 50px;
+  font-size: 24px;
+  color: #224161;
+  text-align: center; /* Centraliza o título no formulário */
+}
+
+.form-group {
+  text-align: center; /* Centraliza os elementos do formulário */
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #224161;
+
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+input {
+  width: 375px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 40px;
+}
+
+button.btn-entrar {
+  width: 100%;
+  padding: 10px;
+  background-color: #295078;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button.btn-entrar:hover {
+  background-color: #0d1925;
+}

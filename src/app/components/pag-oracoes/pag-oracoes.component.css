@@ -1,0 +1,65 @@
+header {
+  background-color: #314563;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 0 30px;
+}
+
+
+.logo {
+  width: 80px;
+  height: 80px;
+  background-image: url("./../../assets/image/logo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo:hover {
+  filter: brightness(1.2); /* Efeito de hover na logo */
+  transition: filter 0.3s;
+}
+
+section
+{
+  flex: 1; /* Ocupa todo o espaço disponível no app-root */
+  display: flex;
+  flex-direction: column; /* Permite organizar o conteúdo verticalmente */
+  background: #EAC3C5; /* Ocupa todo o espaço disponível no app-root */
+  gap: 10vh;
+  text-align: center;
+  height: 80vh;
+  padding: 30px;
+
+}
+
+.oracoes h2{
+  font-size: 50px;
+  margin-top: 30px;
+
+
+}
+
+.oracoes p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(240, 248, 255, 0.808);
+  margin-top: 50px;
+  max-width: 75%;
+  padding: 20px;
+  border-radius: 10px;
+  height: 100px;
+
+
+
+
+}
+
+
+

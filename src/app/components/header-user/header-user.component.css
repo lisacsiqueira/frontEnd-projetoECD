@@ -1,0 +1,57 @@
+header {
+  background-color: #314563;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 0 30px;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+header ul li {
+  position: relative;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 500px;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+
+
+header ul li:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: aliceblue;
+}
+
+
+.logo {
+  width: 80px;
+  height: 80px;
+  background-image: url("./../../assets/image/logo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo:hover {
+  filter: brightness(1.2); /* Efeito de hover na logo */
+  transition: filter 0.3s;
+}

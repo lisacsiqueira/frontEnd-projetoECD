@@ -1,8 +1,19 @@
 
-form{
-  background-color: rgb(219, 22, 22);
+.pagLogin {
+  flex: 1; /* Ocupa todo o espaço disponível no app-root */
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column; /* Permite organizar o conteúdo verticalmente */
+  background: #EAC3C5; /* Ocupa todo o espaço disponível no app-root */
+  gap: 10vh;
+
+
+
+}
+
+.login{
+  display: flex;
+  justify-content: center;
+  gap: 30vh;
+  padding: 45px ;
+  height: 100%;
 }
