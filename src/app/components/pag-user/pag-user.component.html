@@ -1,10 +1,11 @@
 <header>
-  <div class="logo"></div>
+  <a routerLink="/pag-user"><div class="logo"></div></a>
 
   <ul>
-    <li><a href="#versiculo">Versículo do Dia</a></li>
-    <li><a href="#oracoes">Minhas Orações</a></li>
-    <li><a href="#versiculoFavoritos">Versículos Favoritos</a></li>
+    <li><a (click)="scrollToAnchor('versiculo')">Versículo do Dia</a></li>
+    <li><a (click)="scrollToAnchor('oracoes')">Minhas Orações</a></li>
+    <li><a (click)="scrollToAnchor('versiculoFavoritos')">Versículos Favoritos</a></li>
+    <li><a routerLink="/home">Sair</a></li>
 
   </ul>
 </header>
@@ -28,7 +29,7 @@ e com ação de graças, apresentem seus pedidos a Deus."
 
 — Filipenses 4:6
   </p>
-  <button type="button">Minhas Orações</button>
+  <button routerLink="/pag-oracoes" type="button">Minhas Orações</button>
   <!-- <button type="button">Orações Respondidas</button> -->
   </div>
 
@@ -46,7 +47,7 @@ e com ação de graças, apresentem seus pedidos a Deus."
 
     — Filipenses 4:6
   </p>
-  <a href="">Leia Mais</a>
+  <a routerLink="/pag-user">Leia Mais</a>
 
 </div>
 </section>

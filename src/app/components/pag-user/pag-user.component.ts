@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HeaderUserComponent } from "../header-user/header-user.component";
 import { FooterComponent } from "../footer/footer.component";
 import { RouterLink } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-pag-user',
@@ -12,4 +13,9 @@ import { RouterLink } from '@angular/router';
 })
 export class PagUserComponent {
 
+  constructor(private viewportScroller: ViewportScroller) {}
+
+  scrollToAnchor(anchor: string): void {
+    this.viewportScroller.scrollToAnchor(anchor);
+  }
 }
